@@ -58,10 +58,19 @@ console.log(lastTest);
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
- return cb(x+y);
+ 
 }
 
-console.log(sumNums (1,2));
+
+//start
+function sumNums(x, y, cb) {
+  // sumNums adds two numbers (x, y) and passes the result to the callback.
+ }
+ const add = function (x, y) {
+  return x + y ;
+ }
+ console.log(sumNums(2, 5, add));
+//end
 
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
