@@ -101,7 +101,32 @@ console.log(donationTotal);
 // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
 // Problem 1
+// The event director needs to have all the runners LAST names in uppercase
+
+let lastNamesAllCaps = [];
+
+const capRunners = runners.map(function(lastCap) {
+return lastCap.last_name.toUpperCase();
+});
+
+console.log(capRunners);
 
 // Problem 2
+//The event director needs all of the runners first names and id
+
+let nameId = [];
+
+runners.forEach(function (idItems) {
+  return nameId.push(`${idItems.first_name} ${idItems.id}`);
+});
+console.log(nameId);
 
 // Problem 3
+//The event director needs all of the runners names and emails
+
+let marketingInfo = [];
+
+runners.forEach(function (markStuff) {
+  return marketingInfo.push(`${markStuff.first_name} ${markStuff.last_name} ${markStuff.email}`);
+});
+console.log(marketingInfo);
