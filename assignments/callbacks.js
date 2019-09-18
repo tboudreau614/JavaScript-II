@@ -89,12 +89,21 @@ const mult = function (x, y) {
 }
 
 console.log(multiplyNums(25, 4, mult));
-
 //end
+
+//start
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
+    if (items.includes("Notebook")) {
+      return cb(true);
+    } else {
+      return cb(false);
+    }
 }
+
+console.log(items.includes("Notebook"));
+//end
 
 /* STRETCH PROBLEM */
 
